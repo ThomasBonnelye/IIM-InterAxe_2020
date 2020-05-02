@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <title>LOCAL</title>
+
+    <!-- Bootstrap core CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+        integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+
+    <!-- Styles -->
+    <link href="css/styleFinal.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Source+Code+Pro&display=swap" rel="stylesheet">
+
+
+
+</head>
+
+<body>
+    <div class="applibarre">
+        <div class="logoapp">
+            <img src="img/logoapp.png" alt="LogoAppliBarre" class="logoappImg">
+        </div>
+        <p class="texteBarre">Le Secret de Khéops</p>
+        <div class="croix" onclick="nope()"></div>
+    </div>
+    <div class="container">
+        <p class="textes">
+            “Dans cette pyramide se trouve une pièce cachée. Cette pièce ne s’ouvrira qu’en trouvant un code, un mot,
+            une suite de symbole. Devant les dangers que représente la découverte de cette énigme, nous avons dû
+            abandonner nos recherches. C’est pourquoi nous vous avons piégé ici. Trouvez cette énigme pour nous, et vous
+            serez libérez. Le compte à rebours ici présent correspond au temps que dure l’effet du poison et qui vous
+            permet de voir la pyramide comme à l’époque de la 4ème dynastie. Dépassez ce temps, et vous ne serez plus
+            capable de visualiser les indices et serez donc bloqués à vie dans la pyramide. Trouvez le code, et vous
+            serez en liberté et les trésors de la pyramide vous attendront comme récompense.”
+        </p>
+        <div id="countdown"></div>
+        <div class="form-group">
+            <label class="code">Code:</label>
+            <div class="inputs">
+                <input type="text" class="form-control reponse" id="réponse1" required>
+                <input type="text" class="form-control reponse" id="réponse2" required>
+                <input type="text" class="form-control reponse" id="réponse3" required>
+            </div>
+
+        </div>
+        <button type="submit" class="btn valid" onclick="getReponse()">VALIDER</button>
+    </div>
+
+    <div class="barre">
+        <div class="demarrer">
+            <img class="logoWin" src="img/logowin.jpg" alt="logoWindows">
+        </div>
+        <div class="appli">
+            <img class="logoAppli" src="img/logoapp.png" alt="logoAppli">
+        </div>
+        <div class="appli2" onclick="barre()" data-toggle="modal" href="#portfolioModal3">
+            <img class="logoAppli2" src="img/livre.png" alt="logoAppli2">
+        </div>
+        <div class="droite"></div>
+    </div>
+
+    <!--Modal-->
+
+    <div class="portfolio-modal modal" id="portfolioModal3" data-backdrop="false">
+        <div class="recherche2">
+            <div class="applibarre2">
+                <div class="logoapp">
+                    <img src="img/livre.png" alt="LogoAppliBarre" class="logoappImg">
+                </div>
+                <p class="texteBarre2">Manuel</p>
+                <div class="croix2" data-dismiss="modal" onclick="error()"></div>
+            </div>
+            <img src="img/page_doc.svg" alt="page_doc">
+        </div>
+    </div>
+
+    <!-- Scripts -->
+    <script src="app.js"></script>
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+        integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+        crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
+        integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
+        crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
+        integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
+        crossorigin="anonymous"></script>
+
+</body>
+
+</html>

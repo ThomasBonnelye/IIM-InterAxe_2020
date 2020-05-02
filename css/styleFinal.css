@@ -1,0 +1,272 @@
+body {
+    font-family: 'Source Code Pro', monospace;
+    text-align: center;
+    background-color: #FFD38E;
+}
+
+.victory {
+    background-image: url('../img/momie\ __code\ bon_.svg');
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.defete {
+    background-image: url('../img//momies\ _temps\ écoulé_.svg');
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+/* BARRE STYLE APPLI*/
+
+.applibarre {
+    top: 0;
+    width: 100%;
+    height: 30px;
+    background-color: #FFE5BC;
+}
+
+.logoapp {
+    width: 30px;
+    height: 30px;
+    margin-left: 1%;
+}
+
+.logoappImg {
+    max-width: 80%;
+    max-height: 80%;
+}
+
+.texteBarre {
+    font-size: 10px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-weight: 300;
+    margin-top: -22px;
+    margin-left: -1239px;
+}
+
+.croix {
+    width: 30px;
+    height: 30px;
+    margin-top: -39px;
+    margin-left: 1410px;
+    background-image: url(../img/cross_black.svg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.croix:hover {
+    background-image: url(../img/cross_white.svg);
+    background-color: red;
+    cursor: pointer;
+}
+
+/* FIN BARRE */
+
+.container {
+    width: 100%;
+    text-align: center;
+    display: block;
+    text-align: center;
+}
+
+#countdown {
+    font-size: 100px;
+    color: red;
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    width: 400px;
+    height: 400px;
+    margin-top: -100px;
+    /*set to a negative number 1/2 of your height*/
+    margin-left: -200px;
+    z-index: -1;
+}
+
+.textes {
+    font-size: 20px;
+    background-color: #FFE5BC;
+    margin-top: 65px;
+}
+
+.code {
+    font-size: 60px;
+    margin-top: 150px;
+}
+
+.inputs {
+    margin-top: 35px;
+    z-index: 1;
+}
+
+.reponse {
+    border: 3px solid rgb(238, 205, 153);
+    width: 50px;
+    height: 50px;
+    display: inline-block;
+    background-color: #FFE5BC;
+    text-align: center;
+    z-index: 1;
+}
+
+.reponse:focus {
+    background-color: #FFE5BC;
+    box-shadow: none;
+    -moz-box-shadow: none;
+    -webkit-box-shadow: none;
+}
+
+*:focus {
+    outline: none;
+}
+
+.valid {
+    margin-top: 40px;
+    background-color: #FFE5BC;
+    font-size: 30px;
+}
+
+.valid:hover {
+    background-color: #f5daae;
+}
+
+#resultat {}
+
+/* BARRE DES TACHES*/
+
+.barre {
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    height: 50px;
+    background-color: black;
+}
+
+.demarrer {
+    width: 30px;
+    height: 30px;
+    position: fixed;
+    bottom: 10px;
+    left: 8px;
+}
+
+.demarrer:hover {
+    cursor: not-allowed;
+    opacity: 0.5;
+}
+
+.logoWin {
+    max-width: 100%;
+    max-height: 100%;
+}
+
+.appli {
+    width: 50px;
+    height: 50px;
+    position: fixed;
+    left: 49px;
+    border-bottom: 2px solid #76b9ed;
+    background-color: #4c4d54;
+}
+
+.appli:hover {
+    cursor: pointer;
+    background-color: #67686e;
+}
+
+.logoAppli {
+    max-width: 80%;
+    max-height: 80%;
+    margin-top: 6px;
+}
+
+.appli2 {
+    width: 50px;
+    height: 50px;
+    position: fixed;
+    left: 105px;
+    border-bottom: 2px solid #76b9ed;
+}
+
+.appli2:hover {
+    cursor: pointer;
+    filter: brightness(1.20);
+}
+
+.appli3 {
+    width: 50px;
+    height: 50px;
+    position: fixed;
+    left: 105px;
+    border-bottom: 2px solid #76b9ed;
+}
+
+.appli3:hover {
+    cursor: not-allowed;
+    filter: brightness(1.20);
+}
+
+.logoAppli2 {
+    max-width: 80%;
+    max-height: 80%;
+    margin-left: 2px;
+    margin-top: 5px;
+}
+
+.droite {
+    width: 50px;
+    height: 50px;
+    border-left: 1px solid white;
+    position: fixed;
+    right: -40px;
+    background-color: black;
+}
+
+.droite:hover {
+    cursor: not-allowed;
+    background-color: #505050;
+}
+
+/* MODAL*/
+
+.recherche2 {
+    width: 840px;
+    height: 500px;
+    background-color: white;
+    position: fixed;
+    top: 12%;
+    left: 30%;
+    box-shadow: 3px 3px 10px #2F4F4F;
+}
+
+.applibarre2 {
+    top: 0;
+    width: 100%;
+    height: 30px;
+    background-color: #DCDCDC;
+}
+
+.texteBarre2 {
+    font-size: 10px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-weight: 300;
+    margin-top: -22px;
+    margin-left: 44px;
+}
+
+.croix2 {
+    width: 30px;
+    height: 30px;
+    margin-top: -39px;
+    margin-left: 810px;
+    background-image: url(../img/cross_black.svg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.croix2:hover {
+    background-image: url(../img/cross_white.svg);
+    background-color: red;
+    cursor: pointer;
+}
